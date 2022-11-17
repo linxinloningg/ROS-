@@ -1,2 +1,0 @@
-moveit_config:probot_description
--DCATKIN_DEVEL_PREFIX=/home/lin/文档/probot_arm_simulation/devel -DCMAKE_INSTALL_PREFIX=/home/lin/文档/probot_arm_simulation/install -G Unix Makefiles

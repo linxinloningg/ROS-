@@ -1,8 +1,0 @@
-prefix=/home/lin/文档/probot_arm_simulation/install
-
-Name: moveit_config
-Description: Description of moveit_config
-Version: 0.3.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
