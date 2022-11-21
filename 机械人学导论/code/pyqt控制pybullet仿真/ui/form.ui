@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>450</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QScrollArea" name="scrollArea">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>450</width>
+     <height>700</height>
+    </rect>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>448</width>
+      <height>698</height>
+     </rect>
+    </property>
+    <widget class="QGroupBox" name="posture_controller">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>400</width>
+       <height>350</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(0, 170, 0);</string>
+     </property>
+     <property name="title">
+      <string>位姿控制</string>
+     </property>
+     <widget class="QSlider" name="Slider_Rx">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>190</y>
+        <width>160</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_Rx">
+      <property name="geometry">
+       <rect>
+        <x>41</x>
+        <y>194</y>
+        <width>72</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Rx：0</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_Y">
+      <property name="geometry">
+       <rect>
+        <x>41</x>
+        <y>99</y>
+        <width>72</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Y：0</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_Z">
+      <property name="geometry">
+       <rect>
+        <x>41</x>
+        <y>146</y>
+        <width>72</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Z：0</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_X">
+      <property name="geometry">
+       <rect>
+        <x>41</x>
+        <y>51</y>
+        <width>72</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>X：0</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="Slider_Y">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>100</y>
+        <width>160</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QSlider" name="Slider_X">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>50</y>
+        <width>160</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QSlider" name="Slider_Z">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>150</y>
+        <width>160</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_Ry">
+      <property name="geometry">
+       <rect>
+        <x>41</x>
+        <y>241</y>
+        <width>72</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Ry：0</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="Slider_Ry">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>240</y>
+        <width>160</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_Rz">
+      <property name="geometry">
+       <rect>
+        <x>41</x>
+        <y>289</y>
+        <width>72</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Rz：0</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="Slider_Rz">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>290</y>
+        <width>160</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="joint_controller">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>370</y>
+       <width>400</width>
+       <height>350</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(0, 170, 0);</string>
+     </property>
+     <property name="title">
+      <string>关节点控制</string>
+     </property>
+     <widget class="QSlider" name="Slider_joint4">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>190</y>
+        <width>160</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_joint4">
+      <property name="geometry">
+       <rect>
+        <x>41</x>
+        <y>194</y>
+        <width>72</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>joint4：0</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_joint2">
+      <property name="geometry">
+       <rect>
+        <x>41</x>
+        <y>99</y>
+        <width>72</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>joint2：0</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_joint3">
+      <property name="geometry">
+       <rect>
+        <x>41</x>
+        <y>146</y>
+        <width>72</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>joint3：0</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_joint1">
+      <property name="geometry">
+       <rect>
+        <x>41</x>
+        <y>51</y>
+        <width>72</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>joint1：0</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="Slider_joint2">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>100</y>
+        <width>160</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QSlider" name="Slider_joint1">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>50</y>
+        <width>160</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QSlider" name="Slider_joint3">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>150</y>
+        <width>160</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_joint5">
+      <property name="geometry">
+       <rect>
+        <x>41</x>
+        <y>241</y>
+        <width>72</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>joint5：0</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="Slider_joint5">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>240</y>
+        <width>160</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_joint6">
+      <property name="geometry">
+       <rect>
+        <x>41</x>
+        <y>289</y>
+        <width>72</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>joint6：0</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="Slider_joint6">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>290</y>
+        <width>160</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
